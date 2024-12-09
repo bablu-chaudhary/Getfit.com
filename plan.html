@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetFit - Fitness Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="plan.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+     
+    <header class="navbar">
+<div class="logo">
+    <img src="logo.png" alt="Fitness Logo"  width="200" height="150px">
+    <h1 >GetFit - Your Fitness Guide </h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Exercise.html">Exercises</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="tips.html">Daily Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+          <button class="toggle-menu" onclick="toggleMenu()">           ☰</button>
+        </nav>
+          
+    </header>
+    
+    <main><section>
+
+        <div class="container">
+            <h1>Choose Your Subscription Plan</h1>
+            <div class="plans">
+                <div class="plan" id="basic-plan">
+                    <h2>Basic Plan</h2>
+                    <p>Price: Rs 10k/month</p>
+                    <button onclick="subscribe('basic')">Subscribe</button>
+                </div>
+                <div class="plan" id="premium-plan">
+                    <h2>Premium Plan</h2>
+                    <p>Price: Rs 25k/month</p>
+                    <button onclick="subscribe('premium')">Subscribe</button>
+                </div>
+                <div class="plan" id="pro-plan">
+                    <h2>Pro Plan</h2>
+                    <p>Price: Rs 50k/month</p>
+                    <button onclick="subscribe('pro')">Subscribe</button>
+                </div>
+            </div>
+            <div id="message"></div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GetFit</p>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">YouTube</a>
+        </div>
+        <div class="download-app">
+            <a href="#">App Store</a>
+            <a href="#">Google Play</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

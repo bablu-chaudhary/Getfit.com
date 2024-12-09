@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetFit - Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fitness Logo" class="logo-img" width="200" height="150">
+            <h1>GetFit - Your Fitness Guide</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Exercise.html">Exercises</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="tips.html">Daily Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="toggle-menu" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <br>
+        
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message" >Message:</label>
+                <textarea id="message" name="message" rows="7" cols="50"  required></textarea>
+                <br>
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact info </h2>
+            
+                    <ul> <li >CONTACT NUMBERS</li>
+                     Tech Number :+917909041680
+                     Help Desk : +91-9319445654
+                    </ul>
+
+
+     </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 GetFit</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

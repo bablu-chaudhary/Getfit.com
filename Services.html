@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetFit - Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Fitness Logo" class="logo-img" width="200" height="150">
+            <h1>GetFit - Your Fitness Guide</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Exercise.html">Exercises</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="tips.html">Daily Tips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="toggle-menu" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Services</h2>
+            <br>
+            <br>
+             <!-- BMI Calculator -->
+            <div class="main">
+             <div id="bmi-calculator">
+                <h3>BMI Calculator</h3>
+                <input type="number" id="weight" placeholder="Weight (kg)"required>
+                <input type="number" id="height" placeholder="Height (m)"required>
+                <button onclick="calculateBMI()">Calculate BMI</button>
+                <p id="bmi-result"></p>
+                <div class="result-graph" id="bmi-graph"></div>
+            </div>
+            <br>
+            <div id="BMI-Categories:">
+                <h4>BMI Categories:</h4>
+                Underweight = <18.5 
+                <br>Normal weight = 18.5 to 24.9
+                <br>Overweight = 25 to 29.9
+               <br>Obesity = BMI of 30 or greater
+            </div>
+    
+            </div>
+
+
+            <br>
+            <br>
+             <!-- Body Fat Calculator -->
+            <div class="second">
+             <div id="body-fat-calculator">
+                <h3>Body Fat Calculator</h3>
+                <input type="number" id="waist" placeholder="Waist Circumference (cm)"required>
+                <input type="number" id="neck" placeholder="Neck Circumference (cm)"required>
+                <input type="number" id="height-body" placeholder="Height (cm)"required>
+                <button onclick="calculateBodyFat()">Calculate Body Fat</button>
+                <p id="body-fat-result"></p>
+                <div class="result-graph" id="body-fat-graph"></div>
+            </div>
+            <br>
+       
+            <div>
+                <h4>General body fat percentage categories: </h4>
+    <ul><li>Essential: 9-11% for women and 3-5% for men</li>
+<li>Below Average/Athletes: 12-19% for women and 6-13% for men</li>
+<li>General Fitness: 20-24% for women and 14-17% for men</li>
+<li>Average/Acceptable: 25-29% for women and 18-24% for men</li>
+<li>Obese (Level I & II): 30% + for women and 25% + for men</li>
+</ul>           
+</div>
+            </div>
+                <br>
+            <br>
+            <div class="third"></div>
+            <!-- Calorie Calculator -->
+            <div id="calorie-calculator">
+                <h3>Calorie Calculator</h3>
+                <input type="number" id="age" placeholder="Age (years)" required>
+                <input type="number" id="weight-calories" placeholder="Weight (kg)" required>
+                <input type="number" id="height-calories" placeholder="Height (m)" required>
+                
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </fieldset>
+        
+                <label for="activity-level">Activity Level:</label>
+                <select id="activity-level">
+                    <option value="1.2">Sedentary (little or no exercise)</option>
+                    <option value="1.375">Lightly active (light exercise/sports 1-3 days/week)</option>
+                    <option value="1.55">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                    <option value="1.725">Very active (hard exercise/sports 6-7 days a week)</option>
+                    <option value="1.9">Super active (very hard exercise, physical job, or training twice a day)</option>
+                </select>
+        
+                <button onclick="calculateCalories()">Calculate Calories</button>
+                <p id="calories-result"></p>
+                <div class="result-graph" id="calories-graph"></div>
+            </div>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 GetFit</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tips.js"></script>
+</body>
+</html>

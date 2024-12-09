@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f5f2; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px; /* Increased max-width for larger screens */
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50; /* Darker color for the heading */
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of plans */
+    justify-content: center; /* Center the plans */
+    margin-top: 20px;
+}
+
+.plan {
+    background: #ffffff; /* White background for plan cards */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 10px; /* Add margin for spacing */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 300px; /* Limit max width for each plan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.plan:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.plan h2 {
+    margin: 0;
+    color: #27ae60; /* Green color for plan titles */
+}
+
+.plan p {
+    color: #34495e; /* Darker color for plan descriptions */
+}
+
+button {
+    background-color: #27ae60; /* Green button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    font-weight: bold; /* Bold text for buttons */
+}
+
+button:hover {
+    background-color: #219653; /* Darker green on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #e74c3c; /* Red color for messages */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column; /* Stack plans vertically on smaller screens */
+        align-items: center; /* Center align plans */
+    }
+
+    .plan {
+        max-width: 90%; /* Allow plans to take more width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Make buttons full width on small screens */
+    }
+}

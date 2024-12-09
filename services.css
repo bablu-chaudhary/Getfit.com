@@ -1,0 +1,23 @@
+#bmi-calculator{
+    width: 250px;
+}
+.main{
+    display: flex;
+    gap: 10px;
+}
+.second{
+    display: flex;
+}
+#body-fat-calculator{
+    width: 250px;
+}
+#calorie-calculator{
+    width:250px ;
+}
+#activity-level{
+    width: 250px;
+}
+.third{
+    display: flex;
+    
+}
